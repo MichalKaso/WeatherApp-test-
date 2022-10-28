@@ -2,21 +2,18 @@
   <div id="app">
     <div class="app" :class="period">
       <WeatherApp :class="period"></WeatherApp>
-      <AppCredits :year="year" :class="period"></AppCredits>
     </div>
   </div>
 </template>
 
 <script>
 import WeatherApp from './components/WeatherApp'
-import AppCredits from './components/AppCredits'
 
 export default {
   name: 'App',
 
   components: {
     WeatherApp,
-    AppCredits
   },
 
   data() {
@@ -40,8 +37,6 @@ export default {
 </script>
 
 <style>
-/** Global **/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 * {
   box-sizing: border-box;
@@ -62,7 +57,7 @@ a {
   transition: color .2s ease-in;
 }
 
-/** App **/
+
 .app {
   height: 100vh;
   width: 100vw;
@@ -73,20 +68,18 @@ a {
 }
 
 .app--day {
-  /*background: linear-gradient(to bottom right, #6CB9C8, #6CB9C8) no-repeat;*/
-  background-color: #6CB9C8;
+  background-color: #b8fd6ea3;
 }
 
 .app--night {
-  /*background: linear-gradient(to bottom right, #484F60, #484F60) no-repeat;*/
-  background-color: #484F60;
+  background-color: #b8fd6ea3;
 }
 
 .app--day a:hover {
-  color: rgba(46, 146, 167, 0.9);
+  color: rgba(6, 6, 6, 0.9);
 }
 
 .app--night a:hover {
-  color: rgba(0, 0, 0, 0.5);
+  color: #b8fd6ea3;
 }
 </style>

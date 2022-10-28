@@ -12,11 +12,11 @@
  */
 
 importScripts(
-  "/progressive-weather-app/precache-manifest.ab644820230c5211906cf74d93f4a4a3.js",
+  "/progressive-weather-app/precache-manifest.896a452ac99807cb2259b711fe7c6665.js",
   "https://storage.googleapis.com/workbox-cdn/releases/3.0.0-beta.0/workbox-sw.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "PWeatherApp"});
+workbox.core.setCacheNameDetails({prefix: "weather-app"});
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to

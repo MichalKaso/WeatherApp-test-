@@ -17,6 +17,12 @@
             :description="this.forecast.description"
             :icon="this.forecast.weatherIcon"
         ></Weather>
+
+        <footer>
+            <div>
+                <p class="footer">Brought to you by: <a href="https://github.com/MichalKaso">MichalKaso</a></p>
+            </div>
+        </footer>
     </main>
 </template>
 
@@ -65,6 +71,22 @@ main {
 
 .app--night {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../assets/images/night.jpg');
+}
+
+.footer {
+    font-size: 0.9rem;
+}
+
+.footer a,
+.footer p {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #cdd2d7;
+}
+
+.footer a:hover {
+    color: #25c95c;
+    transform: translateY(10px);
 }
 
 @media screen and (min-width: 450px) {
